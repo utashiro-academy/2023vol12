@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学籍番号 - web演習11回目の課題</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Josh's Custom CSS Reset -最近の仕様に対応したCSSリセット -->
+    <!-- デフォルトのHTMLが持つスタイルをリセットする -->
+    <link rel="stylesheet" href="reset.css">
+
+    <style>
+        body {
+            background: #efefef;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .menu li {
+            flex-basis: 20%;
+        }
+
+        .wrap {
+            /* max-width: 600px; */
+            margin: auto;
+            background: #ffffff;
+        }
+
+        .card-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex-basis: 29.33%;
+            margin: 2% 2% 2% 2%;
+            border: 1px #000000 solid;
+        }
+
+        .txt {
+            margin: 4% 6%;
+            line-height: 1.3;
+            font-size: 14px;
+        }
+
+        .h-large {
+            text-align: center;
+            margin: 80px auto 40px;
+            font-size: 32px;
+        }
+
+        @media screen and (max-width:480px) {
+
+            /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+            body {
+                background: yellow;
+            }
+
+            .card {
+                flex-basis: 100%;
+            }
+
+            .h-large {
+                margin: 40px auto 24px;
+                font-size: 24px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--　表示させるための本文  -->
+    <main>
+        <div class="wrap">
+            <h1 class="h-large">テストタイトル</h1>
+
+            <!-- 画像は横幅1600px 200kb以下に圧縮 -->
+            <div class="card-wrap">
+                <div class="card">
+                    <img src="photo.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説文：タブレットの写真</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photo.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説文：タブレットの写真</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photo.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説文：タブレットの写真</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photo.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説文：タブレットの写真</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photo.jpg" alt="">
+                    <div class="txt">
+                        <p>写真の解説文：タブレットの写真</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
